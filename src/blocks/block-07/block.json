@@ -1,0 +1,19 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "schmitzoide/block-07",
+	"version": "0.1.0",
+	"title": "Block 07",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Clients want to display a grid of posts on the frontend that is searchable via post title and post content.",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "codeable-skills-chat-gutenberg",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}
