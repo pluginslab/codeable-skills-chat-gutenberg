@@ -1,0 +1,20 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "schmitzoide/slider",
+	"version": "0.1.0",
+	"title": "Block 04 - Slider",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Clients wants a simple block that allows them to build an image slider.",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+
+	"textdomain": "codeable-skills-chat-gutenberg",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}

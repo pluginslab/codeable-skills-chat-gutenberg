@@ -1,0 +1,52 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+div.wp-block-schmitzoide-slider {
+	display: flex; /* Flexbox layout for horizontal slider */
+	overflow-x: auto; /* Enable horizontal scrolling */
+	width: max-content; /* Allow the slider to expand beyond its parent */
+	white-space: nowrap; /* Prevent items from wrapping to the next line */
+	scroll-behavior: smooth; /* Enable smooth scrolling */
+	scrollbar-width: none; /* For Firefox */
+	scroll-snap-type: x mandatory; /* Enable horizontal snapping */
+
+	&::-webkit-scrollbar {
+		display: none; /* For Chrome, Safari, and Edge */
+	}
+
+	@media (max-width: 768px) {
+		display: block; /* Switch to block layout (no flexbox) */
+		overflow-x: hidden; /* No need for horizontal scrolling on mobile */
+	}
+
+	.buttons {
+		position: absolute; /* Position the buttons absolutely */
+		top: 50%; /* Position the buttons in the middle vertically */
+		z-index: 1; /* Ensure the buttons are above the slider */
+
+		button {
+			background: rgba(
+				255,
+				255,
+				255,
+				0.5
+			); /* Semi-transparent white background */
+			border: none; /* Remove the border */
+			color: #333; /* Dark text color */
+			cursor: pointer; /* Show the pointer cursor */
+			font-size: 1.5em; /* Larger font size */
+			padding: 10px; /* Add padding around the text */
+		}
+
+		button:first-of-type {
+			left: 0; /* Position the left button on the left */
+		}
+
+		button:last-of-type {
+			right: 0; /* Position the right button on the right */
+		}
+	}
+}

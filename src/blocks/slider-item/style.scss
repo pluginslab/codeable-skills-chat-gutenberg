@@ -1,0 +1,26 @@
+div.wp-block-schmitzoide-slider-item {
+	flex: 0 0 auto; /* Items take their natural width without shrinking */
+	margin-right: 10px; /* Optional: space between items */
+	box-sizing: border-box; /* Ensure padding and borders are included in width */
+	scroll-snap-align: start; /* Snap each item to the start of the container */
+	max-width: var(--wp--style--global--content-size);
+	img {
+		width: auto; /* Automatically scale the width to maintain aspect ratio */
+		object-fit: cover; /* Optional: fit the image within the container, cropping if needed */
+		max-height: 400px; /* Limit the height of the image */
+
+		@media (max-width: 768px) {
+			width: 100%; /* Images take full width */
+			max-height: none; /* Remove the max-height restriction for mobile */
+			height: auto; /* Maintain aspect ratio for images */
+		}
+	}
+
+	@media (max-width: 768px) {
+		flex: none; /* Remove flex behavior */
+		width: 100%; /* Each item takes full width of the screen */
+		max-width: 100vw; /* Ensure the max width is the viewport width */
+		margin-right: 0; /* Remove any horizontal margin between items */
+		margin-bottom: 20px; /* Add spacing between items vertically */
+	}
+}

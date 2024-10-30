@@ -1,0 +1,17 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"title": "Slider Item",
+	"description": "This is a block that allows you to build a slider item that goes inside a slider.",
+	"textdomain": "codeable-skills-chat-gutenberg",
+	"name": "schmitzoide/slider-item",
+	"parent": ["schmitzoide/slider"],
+	"category": "widgets",
+	"icon": "smiley",
+	"supports": {
+		"html": false
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
