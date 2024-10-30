@@ -1,0 +1,19 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "schmitzoide/block-05",
+	"version": "0.1.0",
+	"title": "Block 05",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Client wants a simple block that allows me to fetch 5 random posts and display on the frontend at each reload.",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "codeable-skills-chat-gutenberg",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php"
+}
