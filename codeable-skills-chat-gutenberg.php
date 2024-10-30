@@ -34,3 +34,16 @@ function create_block_codeable_skills_chat_gutenberg_block_init() {
 	}
 }
 add_action( 'init', 'create_block_codeable_skills_chat_gutenberg_block_init' );
+
+function codeable_skills_chat_gutenberg_register_post_meta() {
+	register_post_meta(
+		'',
+		'codeable_skills_chat_gutenberg',
+		array(
+			'show_in_rest' => true,
+			'single'       => true,
+			'type'         => 'string',
+		)
+	);
+}
+add_action( 'init', 'codeable_skills_chat_gutenberg_register_post_meta' );
