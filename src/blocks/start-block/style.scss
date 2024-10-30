@@ -1,0 +1,42 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+div.wp-block-schmitzoide-block-03 {
+	.accordion-item__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		cursor: pointer;
+	}
+
+	.accordion-item__header::after {
+		justify-self: flex-end;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&.is-open {
+		p {
+			margin: 0.5rem 0;
+		}
+
+		.accordion-item__header::after {
+			content: "-";
+		}
+		.accordion-item__content {
+			display: block;
+		}
+	}
+	&:not(.is-open) {
+		.accordion-item__header::after {
+			content: "+";
+		}
+		.accordion-item__content {
+			display: none;
+		}
+	}
+}
